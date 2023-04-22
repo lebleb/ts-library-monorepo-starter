@@ -1,0 +1,9 @@
+{
+  "name": "library-2",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.5.0",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "library-2": "1.0.1"
+  }
+}
