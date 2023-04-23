@@ -1,7 +1,7 @@
 module.exports = {
-    extends: 'standard-with-typescript',
-    parserOptions: {
-        project: './tsconfig.base.json'
-    },
-    root: true,
-};
+  extends: 'standard-with-typescript',
+  parserOptions: {
+    project: './tsconfig.base.json'
+  },
+  root: true
+}
