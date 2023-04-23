@@ -1,0 +1,69 @@
+name: Code Quality Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  install:
+    name: Install dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Code
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - uses: ./.github/actions/install
+        name: Install Dependencies
+        with:
+          npm-token: ${{ secrets.NPM_TOKEN }}
+
+  lint:
+    runs-on: ubuntu-latest
+    name: ESLint Check
+    needs: [install]
+    steps:
+      - name: Checkout the Code
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - uses: ./.github/actions/install
+        name: Install Dependencies
+        with:
+          npm-token: ${{ secrets.NPM_TOKEN }}
+
+      - name: Run Eslint Checks (with report)
+        run: yarn lint
+
+  test:
+    runs-on: ubuntu-latest
+    name: Run tests for all files
+    needs: [install]
+    steps:
+      - name: Checkout the Code
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - uses: ./.github/actions/install
+        name: Install Dependencies
+        with:
+          npm-token: ${{ secrets.NPM_TOKEN }}
+
+      - name: Run Unit Tests
+        run: yarn test
