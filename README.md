@@ -1,6 +1,9 @@
 # Monorepo + TypeScript + Jest + Eslint
 
+**This starter kit includes a TypeScript build that optimizes the build for speed, eliminating the need to build each project individually.**
+
 This is a monorepo starter kit with TypeScript, Jest, ESLint, and Commitlint pre-configured. The main purpose of this repository is to provide a zero-config project setup for developers who want to start writing code immediately without worrying about the initial project setup.
+
 
 ## Features
 
@@ -53,6 +56,10 @@ Formats all TypeScript files in the project using [StandardJS - JavaScript Stand
 ### `yarn build`
 
 Builds the TypeScript code into the `dist` directory.
+
+### `yarn clean`
+
+Cleans the compiled codes and ts schema files.
 
 ## Contributing
 
