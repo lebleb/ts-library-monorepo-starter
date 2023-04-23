@@ -41,7 +41,7 @@ jobs:
         with:
           npm-token: ${{ secrets.NPM_TOKEN }}
 
-      - name: Run Eslint Checks (with report)
+      - name: Run Eslint
         run: yarn lint
 
   test:
