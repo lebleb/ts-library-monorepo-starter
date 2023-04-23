@@ -4,6 +4,6 @@
   "packageManager": "yarn@3.5.0",
   "main": "./dist/index.js",
   "dependencies": {
-    "library-2": "1.0.1"
+    "library-1": "1.0.0"
   }
 }
