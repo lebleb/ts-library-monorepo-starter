@@ -6,7 +6,7 @@ on:
 
 jobs:
   install:
-    name: Install dependencies
+    name: Install Dependencies
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Code
@@ -46,7 +46,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    name: Run tests for all files
+    name: Run Tests
     needs: [install]
     steps:
       - name: Checkout the Code
