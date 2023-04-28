@@ -4900,6 +4900,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lebleb-library-1@1.0.0, lebleb-library-1@workspace:packages/library-1":
+  version: 0.0.0-use.local
+  resolution: "lebleb-library-1@workspace:packages/library-1"
+  languageName: unknown
+  linkType: soft
+
+"lebleb-library-2@workspace:packages/library-2":
+  version: 0.0.0-use.local
+  resolution: "lebleb-library-2@workspace:packages/library-2"
+  dependencies:
+    lebleb-library-1: 1.0.0
+  languageName: unknown
+  linkType: soft
+
 "leven@npm:^3.1.0":
   version: 3.1.0
   resolution: "leven@npm:3.1.0"
@@ -4916,20 +4930,6 @@ __metadata:
   checksum: 12c5021c859bd0f5248561bf139121f0358285ec545ebf48bb3d346820d5c61a4309535c7f387ed7d84361cf821e124ce346c6b7cef8ee09a67c1473b46d0fc4
   languageName: node
   linkType: hard
-
-"library-1@1.0.0, library-1@workspace:packages/library-1":
-  version: 0.0.0-use.local
-  resolution: "library-1@workspace:packages/library-1"
-  languageName: unknown
-  linkType: soft
-
-"library-2@workspace:packages/library-2":
-  version: 0.0.0-use.local
-  resolution: "library-2@workspace:packages/library-2"
-  dependencies:
-    library-1: 1.0.0
-  languageName: unknown
-  linkType: soft
 
 "lines-and-columns@npm:^1.1.6":
   version: 1.2.4
