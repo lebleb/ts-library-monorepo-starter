@@ -106,8 +106,8 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
     "paths": {
-      "library-1": ["./packages/library-1/src"],
-      "library-2": ["./packages/library-2/src"]
+      "lebleb-library-1": ["./packages/library-1/src"],
+      "lebleb-library-2": ["./packages/library-2/src"]
     }
   }
 }

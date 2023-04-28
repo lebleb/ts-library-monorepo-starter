@@ -11,7 +11,8 @@
     "clean": "yarn build --clean && rimraf ./packages/**/dist",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "format": "standard --fix",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "release": "yarn build && changeset publish"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.1",
@@ -30,5 +31,8 @@
     "standard": "17.0.0",
     "ts-jest": "29.1.0",
     "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.1"
   }
 }
