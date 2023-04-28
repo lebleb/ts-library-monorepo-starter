@@ -1,6 +1,11 @@
 name: 'Install Dependencies'
 description: 'This action installs and caches dependencies efficiently.'
 
+inputs:
+  npm-token:
+    description: The token for registery
+    required: true
+
 runs:
   using: 'composite'
   steps:
@@ -27,6 +32,15 @@ runs:
         key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
           ${{ runner.os }}-yarn-
+
+    - name: Creating .npmrc
+      run: |
+        cat << EOF > "$HOME/.npmrc"
+          //registry.npmjs.org/:_authToken=$NPM_TOKEN
+        EOF
+      shell: bash
+      env:
+        NPM_TOKEN: ${{ inputs.npm-token }}
 
     - name: Install Dependencies
       shell: bash
