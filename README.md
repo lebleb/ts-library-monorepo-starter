@@ -12,8 +12,8 @@ This is a monorepo starter kit with TypeScript, Jest, ESLint, and Commitlint pre
 - **Jest** for unit testing with [ts-jest](https://github.com/kulshekhar/ts-jest)
 - **ESLint** for code linting with [StandardJS - JavaScript Standard Style](https://standardjs.com/)
 - **Commitlint** for commit message linting with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- ~~**CI/CD** process for each PR with [GutHub Workflow](https://docs.github.com/en/actions/using-workflows/about-workflows)~~
-- ~~**Publishing** each package to the NPM registry with [Changesets](https://github.com/changesets/changesets)~~
+- **CI/CD** process for each PR with [GutHub Workflow](https://docs.github.com/en/actions/using-workflows/about-workflows)
+- **Publishing** each package to the NPM registry with [Changesets](https://github.com/changesets/changesets)
 
 ## Getting started
 
