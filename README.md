@@ -7,13 +7,15 @@ This is a monorepo starter kit with TypeScript, Jest, ESLint, and Commitlint pre
 
 ## Features
 
+- **Yarn 2+** package manager [Yarn](https://yarnpkg.com/)
 - **Monorepo** structure with [Yarn workspaces](https://yarnpkg.com/features/workspaces)
 - **TypeScript** support with [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 - **Jest** for unit testing with [ts-jest](https://github.com/kulshekhar/ts-jest)
 - **ESLint** for code linting with [StandardJS - JavaScript Standard Style](https://standardjs.com/)
 - **Commitlint** for commit message linting with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - **CI/CD** process for each PR with [GutHub Workflow](https://docs.github.com/en/actions/using-workflows/about-workflows)
-- **Publishing** each package to the NPM registry with [Changesets](https://github.com/changesets/changesets)
+- **Automatic versioning** with [Changesets](https://github.com/changesets/changesets)
+- **Publishing** each package to the [NPM](https://www.npmjs.com/)
 
 ## Getting started
 
