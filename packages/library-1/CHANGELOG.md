@@ -1,5 +1,11 @@
 # lebleb-library-1
 
+## 2.2.0
+
+### Minor Changes
+
+- 20680d8: feat: add division
+
 ## 2.1.0
 
 ### Minor Changes
