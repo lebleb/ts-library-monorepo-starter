@@ -2,6 +2,7 @@ import { describe, expect, test } from '@jest/globals'
 import { sum } from './sum'
 import { diff } from './diff'
 import { multiple } from './multiple'
+import { division } from './divison'
 
 describe('sum module', () => {
   test('adds 1 + 2 to equal 3', () => {
@@ -18,5 +19,11 @@ describe('diff module', () => {
 describe('multiple module', () => {
   test('multiple 2 x 3 to equal 6', () => {
     expect(multiple(2, 3)).toBe(6)
+  })
+})
+
+describe('division module', () => {
+  test('division 2 x 3 to equal 6', () => {
+    expect(division(4, 2)).toBe(2)
   })
 })
