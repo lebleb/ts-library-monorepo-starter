@@ -1,5 +1,16 @@
 # lebleb-library-2
 
+## 3.0.0
+
+### Major Changes
+
+- c7c4799: feat: add a new calculation method
+
+### Patch Changes
+
+- Updated dependencies [20680d8]
+  - lebleb-library-1@2.2.0
+
 ## 2.0.1
 
 ### Patch Changes
