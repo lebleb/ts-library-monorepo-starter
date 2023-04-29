@@ -1,6 +1,6 @@
 {
   "name": "lebleb-library-1",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "packageManager": "yarn@3.5.0",
   "main": "./dist/index.js",
   "publishConfig": {
