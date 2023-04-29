@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 
-import { sum } from 'lebleb-library-1'
+import { division, sum } from 'lebleb-library-1'
 
-export const printSum = (a: number, b: number): void => { console.log(sum(a, b)) }
+export const printCalculation = (a: number, b: number): void => { console.log(sum(a, b), division(4, 2)) }
 
-printSum(1, 2)
+printCalculation(1, 2)
