@@ -65,6 +65,27 @@ Builds the TypeScript code into the `dist` directory.
 
 Cleans the compiled codes and ts schema files.
 
+## Steps to Publish a New Version of Packages Using Changesets
+
+1. Make the necessary changes to your code and create a pull request.
+
+2. Before the pull request is merged, run the following command to create a new changeset:
+
+   ```sh
+   yarn changeset
+   ```
+3. Answer the questions that are prompted to describe the changes you made. The changeset will be added to the changesets/ directory.
+
+4. Push the changeset commit to your branch.
+
+5. When you're ready to release the new version of your package, merge your PR into the main branch.
+
+6. The changeset library will automatically create a new pull request titled "Release [VERSION]" to release the new version of your package. Review the changes and merge the pull request.
+
+7. Once the pull request is merged, the changeset library will automatically publish the new version of your package to the npm registry.
+
+Using changesets makes it easy to manage package versions in your GitHub repository, and automates the process of releasing new versions to the npm registry. By following these steps, you can publish new versions of your packages quickly and efficiently, with minimal manual intervention.
+
 ## Contributing
 
 If you want to contribute to this project, please fork the repository and create a pull request with your changes. Make sure to follow the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) format for your commit messages.
