@@ -1,5 +1,11 @@
 # lebleb-library-2
 
+## 4.0.0
+
+### Major Changes
+
+- a48a909: feat: add a new calculation method
+
 ## 3.0.0
 
 ### Major Changes
