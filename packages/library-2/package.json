@@ -1,12 +1,12 @@
 {
   "name": "lebleb-library-2",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "packageManager": "yarn@3.5.0",
   "main": "./dist/index.js",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "lebleb-library-1": "2.2.0"
+    "lebleb-library-1": "2.3.0"
   }
 }
