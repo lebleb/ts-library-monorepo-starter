@@ -1,5 +1,16 @@
 # lebleb-library-2
 
+## 5.0.0
+
+### Major Changes
+
+- d95b939: feat: use special calculation on app
+
+### Patch Changes
+
+- Updated dependencies [ea0acf9]
+  - lebleb-library-1@2.3.0
+
 ## 4.0.0
 
 ### Major Changes

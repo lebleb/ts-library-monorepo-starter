@@ -1,5 +1,11 @@
 # lebleb-library-1
 
+## 2.3.0
+
+### Minor Changes
+
+- ea0acf9: special calculation for special customers
+
 ## 2.2.0
 
 ### Minor Changes
