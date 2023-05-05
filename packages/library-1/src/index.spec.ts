@@ -3,6 +3,7 @@ import { sum } from './sum'
 import { diff } from './diff'
 import { multiple } from './multiple'
 import { division } from './division'
+import { special } from './special'
 
 describe('sum module', () => {
   test('adds 1 + 2 to equal 3', () => {
@@ -23,7 +24,12 @@ describe('multiple module', () => {
 })
 
 describe('division module', () => {
-  test('division 2 x 3 to equal 6', () => {
+  test('division 4 x 2 to equal 6', () => {
     expect(division(4, 2)).toBe(2)
+  })
+})
+describe('special module', () => {
+  test('special 2 + 3 + 3 to equal 8', () => {
+    expect(special(2, 3, 3)).toBe(8)
   })
 })
